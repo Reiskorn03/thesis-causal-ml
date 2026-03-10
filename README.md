@@ -18,6 +18,28 @@ It does **not** contain:
 - processed restricted datasets
 - outcome parameter artifacts that should remain private
 
+## Technical Highlights
+
+This repository documents a causal machine learning workflow built for observational transplant data.
+
+Key technical elements include:
+- metadata-driven preprocessing for multi-table clinical registry data
+- structured separation of preprocessing, modeling, and evaluation code
+- causal modeling for observational health outcome analysis
+- evaluation of Causal Survival Forests across multiple time horizons
+- handling of restricted clinical data in a public-safe showcase format
+
+## Methodological Overview
+
+The overall workflow represented in this repository includes:
+
+1. preprocessing and harmonization of source data
+2. metadata-based feature handling and variable organization
+3. cohort construction and study-specific filtering
+4. preparation of modeling inputs for causal analysis
+5. causal modeling with a focus on **Causal Survival Forests**
+6. horizon-based evaluation of treatment effect estimates
+
 ## Important note on executability
 
 This public repository is not intended to be fully runnable by external users.  
@@ -25,7 +47,7 @@ Some scripts intentionally retain the original thesis development paths and envi
 
 The repository should therefore be understood as a **code showcase and thesis portfolio artifact**, not as a fully reproducible public package.
 
-## Structure
+## Repository Structure
 
 - `src/preprocessing/` — preprocessing pipeline scripts
 - `src/modeling/` — causal modeling scripts
@@ -34,7 +56,7 @@ The repository should therefore be understood as a **code showcase and thesis po
 - `data/metadata/` — public-safe metadata files
 - `docs/` — supplementary project documentation
 
-## Data Folder
+## Data Access
 
 This public repository does not include the original raw data used in the thesis.
 
@@ -46,3 +68,13 @@ Not included:
 - processed restricted datasets
 - intermediate data products
 - outcome parameter artifacts
+
+## What this repository demonstrates
+
+This project is intended to show more than isolated model code. It reflects work on:
+- structuring a multi-stage thesis pipeline
+- working with restricted observational health data
+- organizing preprocessing and modeling logic across separate pipeline components
+- applying causal machine learning methods to a clinically relevant problem
+- presenting a research codebase in a public portfolio format
+
